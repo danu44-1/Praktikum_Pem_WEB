@@ -288,24 +288,22 @@ Langkah-langkah:
 
 ### 3.3 Lembar Kerja Pengamatan — Tabel 9
 
-**Tabel 9. Hasil Pengamatan Lalu Lintas HTTP**
+### Tabel 9. Lembar Kerja Pengamatan HTTP
 
-| No. | Kondisi Pengujian | URL / Resource | Status HTTP | Ukuran Transfer | Keterangan |
-|---|---|---|---|---|---|
-| 1 | Tanpa cache | http://localhost:3000/ | 200 | 6.8 kB | Over Network |
-| 2 | Dengan cache | http://localhost:3000/ | 200 | 6.8 kB | Over Network |
-| 3 | Tanpa cache | http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js | 200 | 0.9 kB | Over Network |
-| 4 | Dengan cache | http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js | 304 | 0.3 kB | Over Network |
-| 5 | Tanpa cache | http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css | 200 | 7.0 kB | Over Network |
-| 6 | Dengan cache | http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css | 304 | 0.3 kB | Over Network |
+| No. | URL | Metode | Kode Status | Content-Type | Header Lain yang Diamati |
+|---:|---|---|---:|---|---|
+| 1 | `http://localhost:3000/` | Disable Cache | 200 | document | no-cache, must-revalidate |
+| 2 | `http://localhost:3000/` | Dengan Cache | 200 | document | 
+no-cache, must-revalidate |
+| 3 | `http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js` | Disable Cache | 200 | 	script | no-cache, must-revalidate |
+| 4 | `http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js` | Dengan Cache | 304 | 	script | no-cache, must-revalidate |
+| 5 | `http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css` | Disable Cache | 200 | stylesheet | no-cache, must-revalidate |
+| 6 | `http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css` | Dengan Cache | 304 | stylesheet | no-cache, must-revalidate |
 
 **Catatan pengisian:**
 
 - Status HTTP diambil dari kolom Status pada DevTools Network.
-- Ukuran transfer diambil dari kolom Size.
-- Apabila resource berasal dari cache, catat keterangan seperti `memory cache` atau `disk cache`.
-- Apabila resource tidak ditemukan, tuliskan `Tidak tersedia`.
-- Gunakan URL dan hasil pengamatan aktual dari browser.
+- Menggunakan URL dan hasil pengamatan aktual dari browser.
 
 ### 3.4 Tangkapan Layar DevTools
 
