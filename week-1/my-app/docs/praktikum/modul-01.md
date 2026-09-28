@@ -293,8 +293,7 @@ Langkah-langkah:
 | No. | URL | Metode | Kode Status | Content-Type | Header Lain yang Diamati |
 |---:|---|---|---:|---|---|
 | 1 | `http://localhost:3000/` | Disable Cache | 200 | document | no-cache, must-revalidate |
-| 2 | `http://localhost:3000/` | Dengan Cache | 200 | document | 
-no-cache, must-revalidate |
+| 2 | `http://localhost:3000/` | Dengan Cache | 200 | document | no-cache, must-revalidate |
 | 3 | `http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js` | Disable Cache | 200 | 	script | no-cache, must-revalidate |
 | 4 | `http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js` | Dengan Cache | 304 | 	script | no-cache, must-revalidate |
 | 5 | `http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css` | Disable Cache | 200 | stylesheet | no-cache, must-revalidate |
