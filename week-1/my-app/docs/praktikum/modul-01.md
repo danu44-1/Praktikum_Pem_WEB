@@ -287,8 +287,7 @@ Langkah-langkah:
 | 1 | Tanpa cache | http://localhost:3000/ | 200 | 6.8 kB | Over Network |
 | 2 | Dengan cache | http://localhost:3000/ | 200 | 6.8 kB | Over Network |
 | 3 | Tanpa cache | http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js | 200 | 0.9 kB | Over Network |
-| 4 | Dengan cache | 
-http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js | 304 | 0.3 kB | Over Network |
+| 4 | Dengan cache | http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js | 304 | 0.3 kB | Over Network |
 | 5 | Tanpa cache | http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css | 200 | 7.0 kB | Over Network |
 | 6 | Dengan cache | http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css | 304 | 0.3 kB | Over Network |
 
@@ -304,7 +303,7 @@ http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client
 
 #### A. Pengujian Tanpa Cache
 
-[Masukkan tangkapan layar DevTools Network dengan Disable cache aktif]
+![Hasil disable cache](../image/hasil_disable_cache.png)
 
 Keterangan:
 
@@ -312,7 +311,7 @@ Tangkapan layar menunjukkan permintaan resource ketika browser melakukan pemuata
 
 #### B. Pengujian Dengan Cache
 
-[Masukkan tangkapan layar DevTools Network dengan Disable cache tidak aktif]
+![Hasil tanpa disable cache](../image/hasil_tanpa_disable_cache.png)
 
 Keterangan:
 
@@ -337,7 +336,19 @@ curl -I http://github.com
 **Keluaran aktual:**
 
 ```text
-[Tempelkan keluaran curl -I di sini]
+HTTP/1.1 200 OK
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+Link: </_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2>; rel=preload; as="font"; crossorigin="";type="font/woff2", </_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+Cache-Control: no-cache, must-revalidate
+X-Powered-By: Next.js
+Content-Type: text/html; charset=utf-8
+Date: Sun, 27 Sep 2026 23:33:14 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+HTTP/1.1 301 Moved Permanently
+Content-Length: 0
+Location: https://github.com/
 ```
 
 Informasi yang diamati:
@@ -371,7 +382,48 @@ curl -v http://github.com
 **Keluaran aktual:**
 
 ```text
-[Tempelkan keluaran curl -v di sini]
+* Host localhost:3000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:3000...
+* Established connection to localhost (::1 port 3000) from ::1 port 64169 
+* using HTTP/1.x
+> GET / HTTP/1.1
+> Host: localhost:3000
+> User-Agent: curl/8.18.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+< Link: </_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+< Cache-Control: no-cache, must-revalidate
+< X-Powered-By: Next.js
+< Content-Type: text/html; charset=utf-8
+< Date: Sun, 27 Sep 2026 23:35:26 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< Transfer-Encoding: chunked
+< 
+<!DOCTYPE html><html lang="en" ...
+
+* Host github.com:80 was resolved.
+* IPv6: (none)
+* IPv4: 20.205.243.166
+*   Trying 20.205.243.166:80...
+* Established connection to github.com (20.205.243.166 port 80) from 192.168.0.101 port 54237 
+* using HTTP/1.x
+> GET / HTTP/1.1
+> Host: github.com
+> User-Agent: curl/8.18.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 301 Moved Permanently
+< Content-Length: 0
+< Location: https://github.com/
+< 
+* Connection #0 to host github.com:80 left intact
 ```
 
 Informasi yang diamati meliputi:
@@ -490,11 +542,11 @@ Integrasi nyata memerlukan pemeriksaan terhadap izin API, kebijakan YouTube, dan
 
 Contoh prompt yang digunakan:
 
-> You are a senior developer; create a simple interface for automatization blocked comment on YouTube for presentation in page.tsx. Use red color, modern design, and show how to use the website. The output needs to be a single file on page.tsx.
+> You are a senior developer; create a simple interface for automatization blocked comment on youtube for presentation in page.tsx the rules are simple use color red, modern, and show how to use for inform in page the output need to be a single file on page.tsx that can be run after finished.
 
 Prompt dokumentasi:
 
-> Create a technical document for the website created in page.tsx using Markdown format. Include development environment, Git workflow, HTTP traffic observation, troubleshooting, and AI usage notes.
+> then, create a technical document for after create that website on page.tsx using this format .md in bottom to show and inform this website the output need to be a single file on modul-01.md that can be inform clearly to other # Dokumen Teknis Modul 1 — Lingkungan Pengembangan, Git, dan Lalu Lintas HTTP ...
 
 ### 5.3 Bagian yang Dibantu AI
 
