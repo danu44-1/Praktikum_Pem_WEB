@@ -298,6 +298,10 @@ Langkah-langkah:
 | 4 | `http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js` | Dengan Cache | 304 | 	script | no-cache, must-revalidate |
 | 5 | `http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css` | Disable Cache | 200 | stylesheet | no-cache, must-revalidate |
 | 6 | `http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0cbk-n2._.css` | Dengan Cache | 304 | stylesheet | no-cache, must-revalidate |
+| 7 | `https://developer.mozilla.org` | Disable Cache | 200 | document | public, max-age=3600 |
+| 8 | `https://developer.mozilla.org` | Dengan Cache | 304 | document | public, max-age=3600 |
+| 9 | `http://github.com` | curl -I | 301 | document | Content-Length: 0 |
+| 10 | `http://github.com` | curl -v | 301 | document | Content-Length: 0 |
 
 **Catatan pengisian:**
 
