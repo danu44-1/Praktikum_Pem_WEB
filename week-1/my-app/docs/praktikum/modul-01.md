@@ -523,19 +523,7 @@ Kendala pada tabel perlu disesuaikan dengan masalah yang benar-benar ditemukan s
 | Cache tidak memberikan hasil yang berbeda | Memeriksa kebijakan cache dan resource yang diuji |
 | curl tidak tersedia | Menggunakan terminal yang mendukung curl atau memasang curl |
 
-### 4.3 Evaluasi dan Pengembangan Selanjutnya
 
-Pengembangan selanjutnya dapat mencakup:
-
-1. Integrasi autentikasi akun YouTube.
-2. Integrasi YouTube Data API.
-3. Pengambilan komentar dari video yang dipilih.
-4. Pengelolaan aturan moderasi melalui backend.
-5. Penyimpanan riwayat moderasi.
-6. Penambahan sistem konfirmasi sebelum tindakan moderasi.
-7. Pengujian keamanan dan validasi akses.
-
-Integrasi nyata memerlukan pemeriksaan terhadap izin API, kebijakan YouTube, dan batas penggunaan API yang berlaku.
 
 ---
 
@@ -576,11 +564,7 @@ Verifikasi dilakukan dengan:
 1. Menjalankan website menggunakan `npm run dev`.
 2. Memeriksa apakah halaman dapat dimuat.
 3. Menguji tombol Run scan.
-4. Menguji perubahan status komentar.
-5. Menguji fitur pencarian dan filter.
-6. Menguji pengaturan aturan moderasi.
-7. Memeriksa tampilan pada ukuran layar berbeda.
-8. Memeriksa keluaran Git dan DevTools secara langsung.
+4. Memeriksa keluaran Git dan DevTools secara langsung.
 
 AI digunakan sebagai alat bantu pengembangan. Keputusan akhir terhadap kode, pengujian, dan hasil implementasi tetap dilakukan oleh pengembang.
 
