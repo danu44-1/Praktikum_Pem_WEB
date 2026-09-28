@@ -182,9 +182,11 @@ git push -u origin feature/comment-moderation-dashboard
 
 **Tautan Pull Request yang telah digabungkan:**
 
-[Masukkan tautan Pull Request GitHub]
+https://github.com/danu44-1/Praktikum_Pem_WEB/pull/1
 
-Status Pull Request: [Merged / Belum tersedia]
+Status Pull Request: [Merged]
+
+Branch dan Pull request yang telah ada tersebut merupakan test/pengujian untuk kebutuhan praktikum
 
 ### 2.3 Keluaran Git Log
 
@@ -197,7 +199,13 @@ git log --oneline --graph
 **Keluaran aktual:**
 
 ```text
-0ed8941 (HEAD -> main, origin/main, week-1_003) Initialize Next.js application with TypeScript and Tailwind CSS setup
+*   e1aad78 (HEAD -> main, origin/main) Merge pull request #1 from danu44-1/week-1_003
+|\  
+| * c0ba3de (origin/week-1_003, week-1_003) Add login component to the application
+|/  
+* 7a9ae4a Update Modul 1 documentation with test results and AI prompt examples
+* 6f16129 Add technical documentation and images for Modul 1
+* 0ed8941 Initialize Next.js application with TypeScript and Tailwind CSS setup
 ```
 
 Keluaran tersebut digunakan untuk memperlihatkan urutan perubahan kode, identitas commit, dan hubungan antarbranch.
