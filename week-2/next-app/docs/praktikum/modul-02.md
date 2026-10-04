@@ -1,7 +1,7 @@
 # Dokumen Teknis Modul 2 — HTML Semantik, Tailwind CSS, dan Aksesibilitas
 
-**Nama/NIM** :  
-**Repositori** :  
+**Nama/NIM** :  Danu Dimas Putra / 105224003
+**Repositori** :  https://github.com/danu44-1/Praktikum_Pem_WEB/tree/week-2
 
 > **Ruang lingkup pemeriksaan:** dokumen ini disusun berdasarkan kode yang tersedia pada `app/page.tsx`, `app/latihan-audit/page.tsx`, dan `app/globals.css`.  
 > **Catatan bukti:** arsip yang diperiksa tidak menyertakan screenshot DevTools/Lighthouse. Karena itu, skor Lighthouse dan tangkapan layar tidak dibuat-buat; bagian tersebut diberi status **belum tersedia** dan dapat diisi setelah pengujian aktual dilakukan.
