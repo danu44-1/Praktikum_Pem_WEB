@@ -409,9 +409,8 @@ Namun, halaman latihan belum memberikan styling `focus-visible` khusus pada inpu
 
 ### 3.4 Tabel skor Lighthouse
 
-**Tidak ada laporan Lighthouse pada arsip yang diperiksa. Jangan mengisi angka di bawah ini sebelum pengujian aktual dilakukan.**
-
 | Halaman | Kondisi | Accessibility |
+|---|---|---:|
 | Halaman utama `/` | Sebelum perbaikan | 90 |
 | Halaman utama `/` | Sesudah perbaikan | 90 |
 | Latihan `/latihan-audit` | Sebelum perbaikan | 76 |
