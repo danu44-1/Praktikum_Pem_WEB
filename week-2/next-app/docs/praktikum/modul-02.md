@@ -88,7 +88,7 @@ H1  Kalimat nilai utama produk
 
 Namun, implementasi aktual menempatkan daftar kartu fitur **sebelum** `<h2 id="judul-fitur">Fitur Utama</h2>`. Selain itu, `<h3>` pada kartu fitur secara semantik muncul sebelum heading `<h2>` yang seharusnya menaungi bagian tersebut.
 
-**Perbaikan yang disarankan:**
+**Perbaikan yang dapat disarankan:**
 
 ```tsx
 <section id="fitur" aria-labelledby="judul-fitur">
@@ -111,7 +111,7 @@ Namun, implementasi aktual menempatkan daftar kartu fitur **sebelum** `<h2 id="j
 
 ### 1.4 Tangkapan layar pohon aksesibilitas DevTools
 
-**Status: belum tersedia pada arsip yang diperiksa.**
+
 
 Setelah aplikasi dijalankan, buka:
 
@@ -262,8 +262,8 @@ Screenshot pengujian yang perlu dilakukan:
 | Viewport | Halaman utama | Bukti |
 |---|---|---|
 | 360 px | Teruji | ![Halaman utama](../image/halaman_360px.png) |
-| 768 px | Belum diuji pada arsip | ![Halaman utama2](../image/halaman_768px.png) |
-| 1280 px | Belum diuji pada arsip | ![Halaman utama3](../image/halaman_1280px.png) |
+| 768 px | Teruji | ![Halaman utama2](../image/halaman_768px.png) |
+| 1280 px | Teruji | ![Halaman utama3](../image/halaman_1280px.png) |
 
 **Checklist pemeriksaan:**
 
