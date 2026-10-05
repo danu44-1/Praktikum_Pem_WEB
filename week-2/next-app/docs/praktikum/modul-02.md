@@ -1,6 +1,7 @@
 # Dokumen Teknis Modul 2 — HTML Semantik, Tailwind CSS, dan Aksesibilitas
 
 **Nama/NIM** :  Danu Dimas Putra / 105224003
+
 **Repositori** :  https://github.com/danu44-1/Praktikum_Pem_WEB/tree/week-2
 
 > **Ruang lingkup pemeriksaan:** dokumen ini disusun berdasarkan kode yang tersedia pada `app/page.tsx`, `app/latihan-audit/page.tsx`, dan `app/globals.css`.  
@@ -256,13 +257,13 @@ Versi yang lebih aman untuk mobile:
 
 ### 2.6 Target screenshot responsif
 
-Screenshot aktual tidak terdapat dalam arsip. Pengujian yang perlu dilakukan:
+Screenshot pengujian yang perlu dilakukan:
 
-| Viewport | Halaman utama | Halaman latihan audit | Bukti |
-|---|---|---|---|
-| 360 px | Belum diuji pada arsip | Belum diuji pada arsip | Screenshot aktual diperlukan |
-| 768 px | Belum diuji pada arsip | Belum diuji pada arsip | Screenshot aktual diperlukan |
-| 1280 px | Belum diuji pada arsip | Belum diuji pada arsip | Screenshot aktual diperlukan |
+| Viewport | Halaman utama | Bukti |
+|---|---|---|
+| 360 px | Teruji | ![Halaman utama](../image/halaman_360px.png) |
+| 768 px | Belum diuji pada arsip | ![Halaman utama2](../image/halaman_768px.png) |
+| 1280 px | Belum diuji pada arsip | ![Halaman utama3](../image/halaman_1280px.png) |
 
 **Checklist pemeriksaan:**
 
